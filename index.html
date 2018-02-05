@@ -4,36 +4,42 @@
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <header class="main-header">
             <div class="main-title">
-                <img class="main-title__logo" src="" alt="">
-                <a class="main-title__name" href="#">Logo</a>
-                <input class="main-title__search" type="search">
+                <img class="main-title__logo" src="assets/img/logo-checklist.png" alt="">
+                <a class="link main-title__name" href="#">Collections of Formulary</a>
+                <input class="form-text main-title__search" type="search">
+                <img class="main-title__image-icon" src="assets/img/search.png" alt="">
             </div>
             <nav class="main-nav">
-                <a class="main-nav__about" href="#">sobre</a>
-                <a class="main-nav__formulary" href="#">formulários
-                    <select name="" id="">
+                <a class="link main-nav__about" href="#">sobre</a>
+                <div class="main-nav__filter">
+                    <img class="main-title__image-icon" src="assets/img/filter.png" alt="Image about sort formulary">
+                    <label for="form-select__type">formulários</label>
+                    <select class="form-select" name="form-select__type" id="form-select__type">
                         <option value="">componentes</option>
                         <option value="">validações</option>
                         <option value="">máscaras</option>
                         <option value="">mensagens de erros</option>
                     </select>
-                </a>
-                <a class="main-nav__order-by" href="#">ordenar por:
-                    <select name="" id="">
+
+
+                    <img class="main-title__image-icon" src="assets/img/sort.png" alt="Image about sort list">
+                    <label for="form-select__order">ordenar por:</label>
+                    <select class="form-select" name="order-by" id="form-select__order">
                         <option value="">mais populares</option>
                         <option value="">mais completos</option>
                     </select>
-                </a>
+                </div>
             </nav>
         </header>
-        <section class="grid-formulary"> </section>
+        <section class="grid-formulary"> a</section>
         <footer class="main-footer">
-
+            <label for="" class="form-label main-footer__developer">Codeista.com</label>
         </footer>
     </body>
 

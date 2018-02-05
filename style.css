@@ -1,11 +1,63 @@
-.main-form {
-    width: 250px;
+.main-header {
+    background-color: greenyellow;
 }
 
-.form-fieldset {
-    margin: auto;
+.main-title {
+    text-align: center;
+    padding: 15px;
+    font-size: 35px;
 }
 
-.form-input {
-    display: block;
+.main-title__logo {
+    width: 35px;
+    vertical-align: middle;
+}
+
+.main-title__name {
+    vertical-align: middle;
+}
+
+.main-title__image-icon {
+    width: 22px;
+    vertical-align: middle;
+}
+
+.main-nav {
+    padding: 5px;
+}
+
+.main-nav__about,
+.main-nav__filter {
+    display: inline-block;
+}
+
+.main-nav__filter {
+    float: right;
+}
+
+.grid-formulary {
+    border: 3px solid #333;
+    heigth: 100px;
+}
+
+.main-footer {
+    background-color: greenyellow;
+    padding: 5px;
+    text-align: right;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.form-select,
+.form-text,
+.form-label {
+    border-radius: 5px;
+}
+
+.main-footer__developer:before {
+    content: 'by: ';
+    font-weight: bold;
 }
