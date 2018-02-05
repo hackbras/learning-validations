@@ -1,0 +1,24 @@
+.main-form {
+    width: 250px;
+    background-color: lightblue;
+    border: 3px solid black;
+}
+
+.form-fieldset {
+    margin: auto;
+    columns: 100px 3;
+}
+
+.form-legend {
+    color: lightcoral;
+    font-weight: bold;
+}
+
+.form-input,
+.form-label {
+    border-radius: 5px;
+}
+
+.form-input {
+    display: block;
+}
