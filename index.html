@@ -5,6 +5,29 @@
         <meta charset="UTF-8">
         <title>Document</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/angular/angular.min.js"></script>
+        <link rel="stylesheet" href="node_modules/animate.css">
+
+        <script>
+            const cidades = ['Ibirité', 'Contagem', 'Belo Horizonte'];
+
+            // const amo = cidades.map(function(nome) {
+            //     return 'i love ' + nome;
+            // });
+
+            // const amo = cidades.map((nome) => {
+            //     return 'i love too ' + nome;
+            // });
+
+            // const amo = cidades.map(nome => 'i love too ' + nome);
+
+            const amo = cidades.filter(nome => nome === 'Contagem')
+                .map(nome => 'i love too ' + nome);
+
+            console.log(amo);
+        </script>
     </head>
 
     <body>
@@ -15,6 +38,7 @@
                 <input class="form-text main-title__search" type="search">
                 <img class="main-title__image-icon" src="assets/img/search.png" alt="">
             </div>
+
             <nav class="main-nav">
                 <a class="link main-nav__about" href="#">sobre</a>
                 <div class="main-nav__filter">
@@ -38,13 +62,14 @@
                 </div>
             </nav>
         </header>
+
         <section class="grid-formulary">
             <h1>Componentes</h1>
             <ul>
                 <li> <a class="link" target="__blank" href="./src/view/formularys/register/formulary.html">Formulário de cadastro</a></li>
             </ul>
-
         </section>
+
         <footer class="main-footer">
             <label for="" class="main-footer__developer">Codeista.com</label>
         </footer>
